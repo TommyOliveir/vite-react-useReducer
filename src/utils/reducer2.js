@@ -1,3 +1,4 @@
+const initialState = 0;
  const reducer2 = (state, action) => {
     switch (action) {
       case "increment":
