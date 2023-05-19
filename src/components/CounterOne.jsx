@@ -7,7 +7,7 @@ const reducer = (state, action) => {
       return state + 1;
     case "decrement":
       return state - 1;
-    case "reset ":
+    case "reset":
       return initialState;
     default:
       return state;
@@ -15,14 +15,16 @@ const reducer = (state, action) => {
 };
 
 function CounterOne() {
-  useReducer(reducer, initialState);
+  const [count, dispatch] = useReducer(reducer, initialState);
 
   return (
     <>
       <div>CounterOne</div>
-      <button>Increment</button>
-      <button>Decreement</button>
-      <button>Reset</button>
+      <div>Count {count}</div>
+      <button onClick={() => dispatch("increment")}>Increment</button>
+      <button onClick={() => dispatch("decrement")}>Decrement</button>
+      <button onClick={() => dispatch("reset")}>Reset</button>
+      <hr></hr>
     </>
   );
 }
