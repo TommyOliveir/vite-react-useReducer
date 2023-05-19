@@ -32,7 +32,7 @@ function App() {
     <CountContext.Provider value={{countState: count, countDispatch: dispatch }}>
       <>
         <h1>This is useReducer samples snippet</h1>
-        count from app js - {count}
+        count state(global) from app js - {count}
         <ComponentA />
         {/* <CounterOne/> */}
         {/* <CounterTwo/> */}
