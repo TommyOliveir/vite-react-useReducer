@@ -7,6 +7,8 @@ import CounterTwo from "./components/CounterTwo";
 import CounterThree from "./components/CounterThree";
 import reducer2 from "./utils/reducer2";
 import ComponentA from "./components/ComponentA";
+import DataFetchingOne from "./components/DataFetchingOne";
+import DataFetchingTwo from "./components/DataFetchingTwo";
 
 
 export const CountContext = React.createContext();
@@ -34,6 +36,8 @@ function App() {
         <h1>This is useReducer samples snippet</h1>
         count state(global) from app js - {count}
         <ComponentA />
+        <DataFetchingOne/>
+        <DataFetchingTwo/>
         {/* <CounterOne/> */}
         {/* <CounterTwo/> */}
         {/* <CounterThree/> */}
